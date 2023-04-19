@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,701,501,401,400&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    satoshi: ['Satoshi', 'sans-serif']
+                },
+                borderColor: {
+                    DEFAULT: '#000000',
+                },
+                borderWidth: {
+                    DEFAULT: '1.5px',
+                },
+                extend: {
+                    spacing: {
+                        cardwidth: '300px',
+                        '80vh': '80vh',
+                        '10vh': '10vh',
+                    },
+                    colors: {
+                        neutralgreen: '#5B7887',
+                        cardgreen: '#4F6673',
+                        dark: '#0E0B0C',
+                        contrast: '#FFFFC7',
+                        contrastdim: '#CDCDB0',
+                    },
+                    lineHeight: {
+                        'extra-tight': '0.5',
+                        '12': '3rem',
+                        '0.5':'0.5'
+                    }
+                },
+                minWidth: {
+                    cardwidth: '300px',
+                    '14': '3.5rem'
+                },
+                screens: {
+                    sm: '320px',
+                    md: '640px',
+                    lg: '768px',
+                    xl: '1024px',
+                    '2xl': '1280px'
+                }
+            }
+        }
+        $(document).ready(function() {
+            $('.menu-icon').click(function() {
+              $('.menu-list').slideToggle('fast');
+            });
+        });
+        </script>
+
+    </head>     
+    
+    <body class="bg-neutralgreen font-satoshi">
+
+        <div class="flex flex-col h-screen justify-center mx-auto">
+
+            <div class="menu-list hidden flex flex-col px-4 pt-5 pb-2 md:px-28">
+                <a href="" class="flex inline-block p-2 justify-end">
+                    sarkarshubhdeep1@gmail.com
+                    <span class="material-symbols-outlined ms-2">email</span>
+                </a>
+                <a href="" class="flex inline-block p-2 justify-end">
+                    +1 234 235621
+                    <span class="material-symbols-outlined ms-2">call</span>
+                </a>
+                <a href="" class="flex inline-block p-2 justify-end">
+                    View resume
+                    <span class="material-symbols-outlined ms-2">contact_page</span>
+                </a>
+            </div>
+
+            
+            <div class="h-10vh flex items-center place-content-between px-4 md:px-28">
+                <img src="shubh-deep.png" class="h-14" alt="" srcset="">
+                <button class="menu-icon flex bg-cardgreen opacity-75 item-center text-white font-medium pl-3 md:pl-3 sm:pl-1 pr-1 py-1 rounded-full">
+                    <span class="sm:hidden md:inline-block">More</span> 
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </button>
+            </div>
+            
+            <div class="flex grow flex-row scroll-px-3 snap-x md:pt-0 md:pb-0 md:px-28 pl-4 pr-28 md:pe-14 justify-start  items-center overflow-x-auto">
+                <div class="flex gap-3 snap-x ">
+
+                    <!-- 1st col -->
+                    <div class="w-cardwidth snap-start min-w-cardwidth sm:w-full h-96">
+
+                        <div class="h-full relative flex flex-col content-between bg-cardgreen ">
+                            <div class="flex">
+                                <p class="p-4 font-semibold	text-6xl">
+                                    HELLO
+                                    <span class="material-symbols-outlined font-semibol text-5xl">waving_hand</span>
+                                </p>
+                            </div>
+                            <img class="object-cover opacity-75 absolute z-1 h-96 w-cardwidth border" src="masked-photo.png"  alt="" srcset="">
+
+                            <div class="flex grow items-end isolate z-2">
+                                <p class="text-2xl p-4 font-semibold">
+                                    I'am <span class="text-contrast">Shubhdeep Sarkar</span>. <br>Nice to meet you.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- 2nd col -->
+                    <div class="w-cardwidth snap-start min-w-cardwidth sm:w-full">
+                        <div class="bg-cardgreen border border-black">
+                            <p class="p-4">
+                                <span class="text-2xl">
+                                    Currently
+                                </span>
+                                <span class="text-black/60">
+                                    doing <b class="text-contrastdim">Masters in Computer Science</b> at Purdue University.
+                                </span>
+                            </p>
+                            <p class="bg-black inline-block flex grow place-content-between text-white font-medium p-4">
+                                Connect on LinkedIn
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <div class="mt-3 p-4 snap-start bg-cardgreen border border-black">
+                            <span class="text-2xl block mb-2">
+                                Academics
+                            </span>
+                            <p class="text-black/60">
+                                I did <b>Bachelors in Computer Applications</b> from Prestige Institute of Management and Research. 
+                                <br>
+                                <span class="inline-block mt-2">
+                                    And my school was in my hometown.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 3rd col -->
+                    <div class="w-cardwidth snap-start min-w-cardwidth sm:w-full">
+                        <div class="p-4 bg-cardgreen border border-black">
+                            <p class="text-black/60">
+                                My interest is primarily in <b class="text-contrastdim">machine learning</b> and <b class="text-contrastdim">artificial intelligence</b>.
+                                <br>
+                                <span class="inline-block mt-2">
+                                    I did an <b>internship in web development</b> so I know a thing or two in that too.
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <div class="mt-3 bg-cardgreen border border-black">
+                            <p class="p-4 text-black/60">My favourite programming language is <b class="text-contrastdim">Python</b> but I also know <b class="text-contrastdim">Java, C++</b> and a bunch of others.
+                            </p>
+                            <p class="bg-black inline-block flex grow place-content-between text-white font-medium p-4">
+                                Check out my Github 
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 4th col -->
+                    <div class="w-cardwidth snap-start min-w-cardwidth sm:w-full">
+                        <div class="p-4 bg-cardgreen border border-black">
+                            <p class="text-black/60">
+                                I’m in the US right now but I’m from a city called <b>Indore</b>, that’s in India.
+                            </p>
+                        </div>
+                        <div class="mt-3 p-4 bg-cardgreen border border-black">
+                            <span class="text-2xl block mb-2">
+                                Hobbies
+                            </span>
+                            <p class="text-black/60">
+                                When I’m free, I like to code something, read a books (big Harry Potter fan btw), enjoy music and sometimes I also cook.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 5th col -->
+                    <div class="w-cardwidth snap-start min-w-cardwidth sm:w-full">
+                        <div class="p-4 bg-cardgreen border border-black">
+                            <span class="text-2xl block mb-2">
+                                Personal philosophy
+                            </span>
+                            <p class="text-black/60">
+                                I like to stay organised with my work & study otherwise I’m a pretty laid-back person. I’m an open-minded guy who believes in <span class="font-bold italic">“not working your ass-off and sacrifice everything for your goals, but doing things you actually love and enjoy life.”</span> I don’t have to have everything in my life. So no stress. I make mistakes and learn for them. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="invisible w-24 md:block min-w-14 sm:w-full h-24 h-96 bg-cardgreen"></div>
+                    
+                </div>
+            </div>
+        
+            <div class="h-10vh flex items-center pl-4 md:pl-28">
+                Designed by Shubhdeep Sarkar. 2023.
+            </div>
+            
+        </div>
+        
+
+
+        
+    </body>
+</html>
